@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="jumbotron">
+            <h1>Welcome to Burger Paradise</h1>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3">
+        <img src="https://lh5.googleusercontent.com/proxy/PKOekhuq8zMFAMwVauES1-KfFywt0_XOH27uez2OdGAnxoh0SWRNsNbzLKdLiPnCOkS7XY7VB1Zi8yUTvfIBf-iW" alt="Burger Image" class="burgerImage">
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3">
+        {{#each burgers}}
+            {{#unless devoured}}
+            <p>
+                Burger Name: {{burger_name}} <button class="devouredBtn btn btn-danger">Devour!</button>
+            </p>
+            {{/unless}}
+        {{/each}}
+    </div>
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-3">
+        {{#each burgers}}
+            {{#if devoured}}
+            <p>
+                Devoured Burger: {{burger_name}}
+            </p>
+            {{/if}}
+        {{/each}}
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-sm-3">
+        <p>Add a Burger</p>
+        <input type="text" id="burgerName">
+        <button id="addBurger" class="btn btn-primary">Add Burger!</button>
+    </div>
+</div>

@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS burger-the-sequel
+DROP DATABASE IF EXISTS burgerthesequel
 
-CREATE DATABASE burger-the-sequel
+CREATE DATABASE burgerthesequel

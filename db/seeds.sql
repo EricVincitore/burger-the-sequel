@@ -1,0 +1,2 @@
+USE Burgerthesequel;
+INSERT INTO burgers (burger_name, createdAt, updatedAt) VALUES ("Double Cheeseburge", curdate(), curdate()), ("Bacon Cheeseburger", curdate(), curdate()), ("Veggie Burger", curdate(), curdate());
