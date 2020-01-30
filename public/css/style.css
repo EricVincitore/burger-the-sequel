@@ -1,2 +1,7 @@
-.burgerImage {
+.bg {
+    background-image: url("http://www.desktopimages.org/pictures/2013/0513/1/restaurant-diner-sign-signs-neon-building-buildings-design-background");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
