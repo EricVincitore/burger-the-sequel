@@ -22,7 +22,7 @@
             {{#each burgers}}
             {{#unless dataValues.devoured}}
             <p id="burgerItem">
-                Burger Name: {{dataValues.burger_name}} <button class="devouredBtn btn btn-danger">Devour!</button>
+                Burger Name: {{dataValues.burger_name}} <button class="devouredBtn btn btn-danger" data-id="{{dataValues.id}}" data-devour="{{dataValues.devoured}}">Devour!</button>
             </p>
             {{/unless}}
             {{/each}}

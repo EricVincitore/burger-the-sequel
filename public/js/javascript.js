@@ -2,26 +2,25 @@
 $(function () {
     console.log("connected")
     $(".devouredBtn").on("click", function (event) {
-        // console.log("Devour Button Clicked")
-        // var burgerId = $(this).data(dataValues.id);
-        // console.log(burgerId)
-        // var newdevour = $(this).attr("data-devoured");
-        // console.log(newdevour)
+        var id = $(this).data("id");
+        console.log(id)
+        var newDevour = $(this).attr("data-devour");
+        console.log(newDevour)
 
         var newDevourState = {
-            devoured: true
+            devoured: newDevour
         };
         console.log(newDevourState)
         // Send the PUT request.
         $.ajax({
             method: "PUT",
-            url: "/api/burger/",
+            url: "/api/burger/:" + id,
             data: newDevourState
         }).then(
             function () {
-                console.log("changed devour to", newdevour);
+                console.log("changed devour to", newDevour);
                 // Reload the page to get the updated list
-                location.reload();
+                //location.reload();
             }
         );
     });
