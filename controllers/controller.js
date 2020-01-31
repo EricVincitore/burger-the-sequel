@@ -8,13 +8,13 @@ function controller (app) {
             };
             console.log(hbsObject)
             res.render("index", hbsObject)
-        })
+        });
     });
 
     app.post("/api/burger", function (req, res) {
         db.Burger.create(req.body).then(function (data) {
             res.render("index", {burgers:req.body})
-        })
+        });
     });
 
     app.put("/api/burger/:id", function (req, res) {
@@ -28,7 +28,17 @@ function controller (app) {
                 return res.status(404).end();
             }
             res.status(200).end();
-        })
+        });
+    });
+
+    app.delete("/api/burger/:id", function (req, res) {
+        db.Burger.destroy({
+            where:{
+                id: req.params.id
+            }
+        }).then(function (data) {
+            res.json(data);
+        });
     });
     
 };

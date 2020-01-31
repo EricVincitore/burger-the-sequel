@@ -18,7 +18,7 @@ $(function () {
             function () {
                 console.log("changed devour to", newDevour);
                 // Reload the page to get the updated list
-                //location.reload();
+                location.reload();
             }
         );
     });
@@ -43,6 +43,22 @@ $(function () {
             function () {
                 console.log("created new burger");
                 // Reload the page to get the updated list
+                location.reload();
+            }
+        );
+    });
+
+    $(".86Btn").on("click", function (event) {
+        event.preventDefault();
+        console.log("86 clicked")
+        var id = $(this).data("id");
+
+        $.ajax({
+            method: "DELETE",
+            url: "/api/burger/" + id
+        }).then(
+            function () {
+                console.log("86ed this burger")
                 location.reload();
             }
         );

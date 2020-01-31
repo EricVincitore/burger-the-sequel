@@ -1,7 +1,19 @@
-.bg {
+html {
+    height: 100%;
+}
+
+body {
     background-image: url("http://www.desktopimages.org/pictures/2013/0513/1/restaurant-diner-sign-signs-neon-building-buildings-design-background");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+p, .inputBox {
+    background-color: azure;
 }
