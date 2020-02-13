@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "developer",
-    "password": "root",
-    "database": "burgerthesequel",
-    "host": "127.0.0.1",
+    "username": "x1y4n9a9wdycf5mt",
+    "password": "fl0nm0h81dcwqbv6",
+    "database": "ex7383l3y97g8tib",
+    "host": "i5x1cqhq5xbqtv00.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false,
     "start": "node server.js"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "x1y4n9a9wdycf5mt",
+    "password": "fl0nm0h81dcwqbv6",
+    "database": "ex7383l3y97g8tib",
+    "host": "i5x1cqhq5xbqtv00.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "x1y4n9a9wdycf5mt",
+    "password": "fl0nm0h81dcwqbv6",
+    "database": "ex7383l3y97g8tib",
+    "host": "i5x1cqhq5xbqtv00.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "operatorsAliases": false,
     "use_env_variable": "JAWSDB_URL"
