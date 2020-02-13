@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("http://www.desktopimages.org/pictures/2013/0513/1/restaurant-diner-sign-signs-neon-building-buildings-design-background");
+    background-image: url("http://getwallpapers.com/wallpaper/full/c/3/2/626628.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,5 +15,11 @@ h1 {
 }
 
 p, .inputBox {
-    background-color: azure;
+    background-color: #9caca2;
+    color: aliceblue;
+}
+
+.jumbotron {
+    background-color: #43726b;
+    color: aliceblue;
 }

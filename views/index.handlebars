@@ -27,7 +27,7 @@
             {{#each burgers}}
             {{#if dataValues.devoured}}
             <p>
-                Devoured Burger: {{dataValues.burger_name}} <button class="86Btn btn btn-danger">86 it! We are Out</button>
+                Devoured Burger: {{dataValues.burger_name}} <button  data-id="{{dataValues.id}}" class="86Btn btn btn-danger">86 it! We are Out</button>
             </p>
             {{/if}}
             {{/each}}
@@ -47,6 +47,7 @@
             <p>Add a Burger</p>
             <input type="text" id="burgerName">
             <button id="addBurger" class="btn btn-primary">Add Burger!</button>
+            <br>
         </div>
     </div>
 

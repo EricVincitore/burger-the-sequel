@@ -15,8 +15,8 @@ $(function () {
             url: "/api/burger/" + id,
             data: newDevourState
         }).then(
-            function () {
-                console.log("changed devour to", newDevour);
+            function (data) {
+                
                 // Reload the page to get the updated list
                 location.reload();
             }
@@ -40,7 +40,7 @@ $(function () {
             url: "/api/burger",
             data: newBurger
         }).then(
-            function () {
+            function (data) {
                 console.log("created new burger");
                 // Reload the page to get the updated list
                 location.reload();
@@ -52,12 +52,13 @@ $(function () {
         event.preventDefault();
         console.log("86 clicked")
         var id = $(this).data("id");
+        console.log(id)
 
         $.ajax({
             method: "DELETE",
             url: "/api/burger/" + id
         }).then(
-            function () {
+            function (data) {
                 console.log("86ed this burger")
                 location.reload();
             }

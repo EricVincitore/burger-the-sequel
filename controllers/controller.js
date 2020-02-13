@@ -27,11 +27,12 @@ function controller (app) {
                 // If no rows were changed, then the ID must not exist, so 404
                 return res.status(404).end();
             }
-            res.status(200).end();
+            res.json(data);
         });
     });
 
     app.delete("/api/burger/:id", function (req, res) {
+        console.log(req.params.id)
         db.Burger.destroy({
             where:{
                 id: req.params.id
